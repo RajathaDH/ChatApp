@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Room</h2>
+            <h3 id="room-name">Room 1</h3>
+            <h2>Users</h2>
+            <ul id="users">
+                <li>User 1</li>
+                <li>User 2</li>
+            </ul>
+        </div>
+
+        <div class="messages">
+            <div class="message">
+                <p>User 1 <span>12:20am</span></p>
+                <p>Hello I am user 1</p>
+            </div>
+            <div class="message">
+                <p>User 2 <span>12:40pm</span></p>
+                <p>Hello I am user 2</p>
+            </div>
+        </div>
+
+        <form id="chat-input">
+            <input type="text" id="chat-msg" required>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+</html>
