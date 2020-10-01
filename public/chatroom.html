@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.4/qs.min.js" integrity="sha512-BHtomM5XDcUy7tDNcrcX1Eh0RogdWiMdXl3wJcKB3PFekXb3l5aDzymaTher61u6vEZySnoC/SAj2Y/p918Y3w==" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="app.js" defer></script>
     <title>Chat App</title>
 </head>
 <body>
@@ -17,19 +20,10 @@
             </ul>
         </div>
 
-        <div class="messages">
-            <div class="message">
-                <p>User 1 <span>12:20am</span></p>
-                <p>Hello I am user 1</p>
-            </div>
-            <div class="message">
-                <p>User 2 <span>12:40pm</span></p>
-                <p>Hello I am user 2</p>
-            </div>
-        </div>
+        <div class="messages"></div>
 
         <form id="chat-input">
-            <input type="text" id="chat-msg" required>
+            <input type="text" id="msg" required>
             <button type="submit">Send Message</button>
         </form>
     </div>
